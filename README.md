@@ -20,11 +20,11 @@ O Space App é uma galeria de imagens espaciais que permite aos usuários explor
 - `Vite` - Build tool para desenvolvimento rápido
 - `JavaScript` - Linguagem de programação principal
 - `Context API` - Para gerenciamento de estados
-- `Styled Components` - Para estilização e estrutaração dos principais componentes
+- `Styled Components` - Para estilização e estruturação dos principais componentes
 
 ## 🛠️ Abrir e rodar o projeto
 
-Para executar o projeto Meteora em seu ambiente local, siga estas etapas:
+Para executar o projeto Space App em seu ambiente local, siga estas etapas:
 
 1. Certifique-se de ter o Node.js instalado em sua máquina.
 
@@ -35,7 +35,7 @@ Para executar o projeto Meteora em seu ambiente local, siga estas etapas:
 4. Navegue até a pasta em questão via terminal (cmd):
 
 ```bash
-cd repo-meteora
+cd space-app
 ```
 
 5. Instale as dependências usando o npm:

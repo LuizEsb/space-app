@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { FotosContext } from "../../context/FotosContext";
+import iconeLupa from "../../assets/search.png"
 
 const ContainerEstilizado = styled.div`
   position: relative;
@@ -48,7 +49,7 @@ export default function CampoTexto(props) {
         placeholder="O que você procura?"
         {...props}
       />
-      <IconeLupa src="src/assets/search.png" />
+      <IconeLupa src={iconeLupa} />
     </ContainerEstilizado>
   );
 }

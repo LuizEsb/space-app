@@ -5,6 +5,7 @@ import BarraLateral from "./componentes/SideBar";
 import Banner from "./componentes/Banner";
 import Galeria from "./componentes/Galeria";
 
+import backgroundBanner from "./assets/banner.png"
 import { FotosProvider } from "./context/FotosContext";
 import ModalZoom from "./componentes/ModalZoom";
 
@@ -46,7 +47,7 @@ const App = () => {
           <MainContainer>
             <BarraLateral />
             <ConteudoGaleria>
-              <Banner backgroundImage={"src/assets/banner.png"} />
+              <Banner backgroundImage={backgroundBanner} />
               <Galeria />
             </ConteudoGaleria>
           </MainContainer>

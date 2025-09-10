@@ -1,4 +1,6 @@
+import { useContext, useEffect } from "react";
 import styled from "styled-components";
+import { FotosContext } from "../../context/FotosContext";
 
 const ContainerEstilizado = styled.div`
   position: relative;
@@ -15,7 +17,7 @@ const InputEstilizado = styled.input`
   line-height: 20px;
   font-weight: 400;
   font-size: 20px;
-  color: #D9D9D9;
+  color: #d9d9d9;
 `;
 
 const IconeLupa = styled.img`
@@ -27,9 +29,25 @@ const IconeLupa = styled.img`
 `;
 
 export default function CampoTexto(props) {
+  const { valorBusca, setValorBusca } = useContext(FotosContext);
+
+  const handleChange = (event) => {
+    const valor = event.target.value
+    try {
+      setValorBusca(valor);
+    } catch (error) {
+      console.error("Erro ao alterar valor da busca: ", error);
+    }
+  };
+
   return (
     <ContainerEstilizado>
-      <InputEstilizado placeholder="O que você procura?" {...props} />
+      <InputEstilizado
+        value={valorBusca}
+        onChange={handleChange}
+        placeholder="O que você procura?"
+        {...props}
+      />
       <IconeLupa src="src/assets/search.png" />
     </ContainerEstilizado>
   );
